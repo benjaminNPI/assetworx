@@ -59,13 +59,13 @@ const Header = () => {
                                 Services
                             </NavLink>
                             <NavLink
-                                to="Case Studies"
+                                to="case-studies"
                                 style={style.link}
                                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                                 Case Studies
                             </NavLink>
                             <NavLink
-                                to="Contact"
+                                to="contact"
                                 style={style.link}
                                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                                 Contact
@@ -112,14 +112,14 @@ const Header = () => {
                                 Services
                             </NavLink>
                             <NavLink
-                                to="Case Studies"
+                                to="case-studies"
                                 onClick={threeMenuFunction}
                                 style={style.link}
                                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                                 Case Studies
                             </NavLink>
                             <NavLink
-                                to="Contact"
+                                to="contact"
                                 onClick={threeMenuFunction}
                                 style={style.link}
                                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
