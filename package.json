@@ -8,7 +8,9 @@
     "start": "node server/server.js",
     "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "cd client && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,8 @@
   "bugs": {
     "url": "https://github.com/benjaminNPI/assetworx/issues"
   },
-  "homepage": "https://github.com/benjaminNPI/assetworx#readme",
-  "dependencies": {
+  "homepage": "https://benjaminnpi.github.io/assetworx/",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
