@@ -15,7 +15,7 @@ const Home = () => {
                             <img className="m-auto" src="/img/assetworx-logo.webp" alt="Assetworx Logo" />
                             <h1 className='font-bold text-white text-5xl text-center m-0'>ASSETWORX</h1>
                             <hr className='text-white border-t-8 rounded'></hr>
-                            <p className='text-white text-center font-bold'>YOUR ASSETS, YOUR INVESTMENTS, OUR EXPERTISE.</p>
+                            <p className='text-white text-center font-bold mb-5'>YOUR ASSETS, YOUR INVESTMENTS, OUR EXPERTISE.</p>
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 order-first mt-16 flex sm:justify-end">
@@ -31,7 +31,7 @@ const Home = () => {
                             </Link>
                             <Link
                                 type="button"
-                                className="hover:bg-white bg-white bg-opacity-60 hover:text-black inline-block mx-auto rounded-full px-6 pt-2 pb-[6px] font-medium text-black text-center mx-1"
+                                className="hover:bg-white bg-white bg-opacity-60 hover:text-black inline-block mx-auto rounded-full px-6 pt-2 pb-[6px] font-medium text-black text-center mx-1 mb-10"
                             >
                                 Request a Pickup
                             </Link>
