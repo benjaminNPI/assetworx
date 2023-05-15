@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import Header from '../../components/Header/index';
 import Services from '../../components/Services/index';
+import Process from '../../components/Process/index';
 
 
 const Home = () => {
@@ -41,6 +42,9 @@ const Home = () => {
             </div>
             <div>
                 <Services />
+            </div>
+            <div>
+                <Process />
             </div>
 
         </>
