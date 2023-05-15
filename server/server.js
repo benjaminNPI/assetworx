@@ -22,7 +22,7 @@ app.get("/api", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 // });
 
-const root = require('path').join(__dirname, '../client', 'public')
+const root = require('path').join(__dirname, '../client', 'build')
 app.use(express.static(root));
 app.get("*", (req, res) => {
     res.sendFile('index.html', { root });
