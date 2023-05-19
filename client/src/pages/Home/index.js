@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Header from '../../components/Header/index';
 import Services from '../../components/Services/index';
 import Process from '../../components/Process/index';
+import Client from '../../components/Clients/index'
+import Cert from '../../components/Cert/index'
 
 
 const Home = () => {
@@ -45,6 +47,12 @@ const Home = () => {
             </div>
             <div>
                 <Process />
+            </div>
+            <div>
+                <Client />
+            </div>
+            <div>
+                <Cert />
             </div>
 
         </>

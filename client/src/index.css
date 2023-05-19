@@ -17,7 +17,7 @@ code {
 }
 
 .bluewave {
-  background-image: url('../build/img/wave-blues.png');
+  background-image: url('../build//img/pastel-wave.webp');
   position: relative;
   height: auto;
   width: 100%;
@@ -39,4 +39,28 @@ code {
   justify-content: center;
   background-size: cover;
   background-position: right;
+}
+
+.ourClients {
+  background-image: url('../build/img/our-clients-background.png');
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: right;
+}
+.cert {
+  background-image: url('../build/img/Computer Background.jpeg');
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+	filter: grayscale(100%);
 }

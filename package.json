@@ -25,5 +25,7 @@
   "homepage": "https://benjaminnpi.github.io/assetworx/",
   "devDependencies": {
     "gh-pages": "^5.0.0"
+  },
+  "dependencies": {
   }
 }

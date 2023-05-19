@@ -29,7 +29,6 @@ const Process = () => {
                             detail.classList.remove("md:w-1/3");
                             detail.classList.add("md:w-1/6");
                         }
-
                     });
                 });
             });
@@ -53,8 +52,8 @@ const Process = () => {
         }
     });
     return (
-        <>
-            <div className='justify-center bg-no-repeat bg-cover bg-center process pt-24'>
+        <div>
+            <div className='justify-center bg-no-repeat bg-cover bg-center process pt-12'>
                 <div className='text-center'>
                     <h1 className='text-white font-bold text-3xl uppercase'>The Process</h1>
                     <hr className='text-darkblue border-t-4 rounded'></hr>
@@ -68,52 +67,48 @@ const Process = () => {
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/forklift.svg' alt=''></img>
                             PICKUP
                         </summary>
-                        <p className="text-gray-500 ">No matter where you are located our team will help you create a solution to gather your assets. </p>
+                        <p className="text-gray-500 text-center">No matter where you are located our team will help you create a solution to gather your assets. </p>
                     </details>
 
-                    <details className="group py-1 text-lg border-none items-center md:w-1/5" style={{ backgroundColor: "#C4EEEA" }}>
-                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                    <details className="group py-1 text-lg border-none md:w-1/5 bg-[#C4EEEA]">
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px] mt-7">
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/box-truck.svg' alt=''></img>
                             TRANSPORT
                         </summary>
-                        <p className="text-gray-500 ">Sealed transportation<br></br>
-                            Chain of custody
+                        <p className="text-gray-500 text-center">Sealed transportation and chain of custody.
                         </p>
                     </details>
 
-                    <details className="group py-1 text-lg border-none md:w-1/5" style={{ backgroundColor: "#8ADDD5" }}>
+                    <details className="group py-1 text-lg border-none md:w-1/5 bg-[#8ADDD5]">
                         <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/gear-2-gear.svg' alt=''></img>
                             PROCESSING
                         </summary>
-                        <ul className="text-gray-500  list-decimal">
+                        <div className="text-gray-500 text-center list-decimal">
                             <li className=''>Serial number tracking</li>
                             <li className=''>Data destruction</li>
                             <li className=''>Test and refurbish</li>
-                        </ul>
+                        </div>
                     </details>
-                    <details className="group py-1 text-lg border-none md:w-1/5" style={{ backgroundColor: "#50CCC0" }}>
-                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                    <details className="group py-1 text-lg border-none md:w-1/5 bg-[#50CCC0]">
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px] mt-4">
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/desktop-computer.svg' alt=''></img>
                             RESELL
                         </summary>
-                        <p className="text-gray-500 ">Resell equipment to multiple market channels to maximize revenue recovery.</p>
+                        <p className="text-gray-500 text-center">Resell equipment to multiple market channels to maximize revenue recovery.</p>
                     </details>
-                    <details className="group py-1 text-lg border-none md:w-1/5" style={{ backgroundColor: "#16BBAB" }}>
+                    <details className="group py-1 text-lg border-none md:w-1/5 bg-[#16BBAB]">
                         <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/recycle.svg' alt=''></img>
                             RECYCLE
                         </summary>
-                        <p className="text-gray-500 ">Breakdown to be recycled for base materials
+                        <p className="text-gray-500 text-center">Breakdown to be recycled for base materials
                         </p>
                     </details>
                 </section>
-                <section className='m-80'>
-                    test
-                </section>
             </main>
 
-        </>
+        </div>
     )
 }
 export default Process
