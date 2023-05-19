@@ -1,19 +1,56 @@
 import React from 'react'
+import { useEffect } from 'react';
 
-export const Process = () => {
-    // Fetch all the details element.
-    const details = document.querySelectorAll("details");
+const Process = () => {
 
-    // Add the onclick listeners.
-    details.forEach((targetDetail) => {
-        targetDetail.addEventListener("click", () => {
-            // Close all the details that are not targetDetail.
-            details.forEach((detail) => {
-                if (detail !== targetDetail) {
-                    detail.removeAttribute("open");
-                }
+
+    useEffect(() => {
+        const mediaQuery768 = window.matchMedia('(min-width: 768px)')
+        const mediaQuery767 = window.matchMedia('(max-width: 767px)')
+
+
+        if (mediaQuery768.matches) {
+            // Fetch all the details element.
+            const details = document.querySelectorAll("details");
+
+            // Add the onclick listeners.
+            details.forEach((targetDetail) => {
+                targetDetail.addEventListener("click", () => {
+                    // Close all the details that are not targetDetail.
+                    details.forEach((detail) => {
+                        if (detail === targetDetail) {
+                            detail.classList.remove("md:w-1/5");
+                            detail.classList.remove("md:w-1/6");
+                            detail.classList.add("md:w-1/3");
+                        }
+                        if (detail !== targetDetail) {
+                            detail.removeAttribute("open");
+                            detail.classList.remove("md:w-1/5");
+                            detail.classList.remove("md:w-1/3");
+                            detail.classList.add("md:w-1/6");
+                        }
+
+                    });
+                });
             });
-        });
+        };
+
+        if (mediaQuery767.matches) {
+            // Fetch all the details element.
+            const details = document.querySelectorAll("details");
+
+            // Add the onclick listeners.
+            details.forEach((targetDetail) => {
+                targetDetail.addEventListener("click", () => {
+                    // Close all the details that are not targetDetail.
+                    details.forEach((detail) => {
+                        if (detail !== targetDetail) {
+                            detail.removeAttribute("open");
+                        }
+                    });
+                });
+            });
+        }
     });
     return (
         <>
@@ -25,61 +62,54 @@ export const Process = () => {
                 </div>
             </div>
             <main className="mx-auto">
-                <section className="grid grid-cols-1 divide-y ">
-                    <details className="group py-1 text-lg border-none">
-                        <summary className="ml-5 flex cursor-pointer text-xl font-bold flex-row items-center justify-between py-1 text-gray-800 marker:[font-size:0px]">
+                <section className="grid grid-cols-1 divide-y md:flex md:flex-row w-100">
+                    <details className="group py-1 text-lg border-none flex justify-center md:w-1/5">
+                        <summary className="flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                            <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/forklift.svg' alt=''></img>
                             PICKUP
-                            <svg className="h-6 w-6 rotate-0 transform text-gray-400 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
-                            </svg>
                         </summary>
-                        <p className="text-gray-500 ml-5">No matter where you are located our team will help you create a solution to gather your assets. </p>
+                        <p className="text-gray-500 ">No matter where you are located our team will help you create a solution to gather your assets. </p>
                     </details>
 
-                    <details className="group py-1 text-lg border-none" style={{ backgroundColor: "#C4EEEA" }}>
-                        <summary className="ml-5 flex cursor-pointer text-xl font-bold flex-row items-center justify-between py-1  ">
+                    <details className="group py-1 text-lg border-none items-center md:w-1/5" style={{ backgroundColor: "#C4EEEA" }}>
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                            <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/box-truck.svg' alt=''></img>
                             TRANSPORT
-                            <svg className="h-6 w-6 rotate-0 transform text-gray-400 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
-                            </svg>
                         </summary>
-                        <p className="text-gray-500 ml-5">Sealed transportation<br></br>
+                        <p className="text-gray-500 ">Sealed transportation<br></br>
                             Chain of custody
                         </p>
                     </details>
 
-                    <details className="group py-1 text-lg border-none" style={{ backgroundColor: "#8ADDD5" }}>
-                        <summary className="ml-5 flex cursor-pointer text-xl font-bold flex-row items-center justify-between py-1 text-gray-800 marker:[font-size:0px]">
+                    <details className="group py-1 text-lg border-none md:w-1/5" style={{ backgroundColor: "#8ADDD5" }}>
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                            <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/gear-2-gear.svg' alt=''></img>
                             PROCESSING
-                            <svg className="h-6 w-6 rotate-0 transform text-gray-400 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
-                            </svg>
                         </summary>
-                        <ul className="text-gray-500 ml-5 list-decimal">
-                            <li className='ml-5'>Serial number tracking</li>
-                            <li className='ml-5'>Data destruction</li>
-                            <li className='ml-5'>Test and refurbish</li>
+                        <ul className="text-gray-500  list-decimal">
+                            <li className=''>Serial number tracking</li>
+                            <li className=''>Data destruction</li>
+                            <li className=''>Test and refurbish</li>
                         </ul>
                     </details>
-                    <details className="group py-1 text-lg border-none" style={{ backgroundColor: "#50CCC0" }}>
-                        <summary className="ml-5 flex cursor-pointer text-xl font-bold flex-row items-center justify-between py-1 text-gray-800 marker:[font-size:0px]">
+                    <details className="group py-1 text-lg border-none md:w-1/5" style={{ backgroundColor: "#50CCC0" }}>
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                            <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/desktop-computer.svg' alt=''></img>
                             RESELL
-                            <svg className="h-6 w-6 rotate-0 transform text-gray-400 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
-                            </svg>
                         </summary>
-                        <p className="text-gray-500 ml-5">Resell equipment to multiple market channels to maximize revenue recovery.</p>
+                        <p className="text-gray-500 ">Resell equipment to multiple market channels to maximize revenue recovery.</p>
                     </details>
-                    <details className="group py-1 text-lg border-none" style={{ backgroundColor: "#16BBAB" }}>
-                        <summary className="ml-5 flex cursor-pointer text-xl font-bold flex-row items-center justify-between py-1 text-gray-800 marker:[font-size:0px]">
+                    <details className="group py-1 text-lg border-none md:w-1/5" style={{ backgroundColor: "#16BBAB" }}>
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                            <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/recycle.svg' alt=''></img>
                             RECYCLE
-                            <svg className="h-6 w-6 rotate-0 transform text-gray-400 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
-                            </svg>
                         </summary>
-                        <p className="text-gray-500 ml-5">Breakdown to be recycled for base materials
+                        <p className="text-gray-500 ">Breakdown to be recycled for base materials
                         </p>
                     </details>
+                </section>
+                <section className='m-80'>
+                    test
                 </section>
             </main>
 
