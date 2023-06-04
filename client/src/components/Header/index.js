@@ -18,7 +18,7 @@ const Header = () => {
     }
 
     return (
-        <div className="isolate mb-5" style={{ backgroundColor: "#06233F" }}>
+        <div className="isolate" style={{ backgroundColor: "#06233F" }}>
             <div className="px-6 lg:px-8">
                 <nav className="flex items-center justify-between" aria-label="Global">
                     <div className='flex items-center'>
@@ -43,13 +43,13 @@ const Header = () => {
                     <div className="hidden lg:flex lg:gap-x-12 text-black">
                         <div className='activeLink text-sm font-semibold leading-6 text-white text-xl'>
                             <NavLink
-                                to=""
+                                to="/"
                                 style={style.link}
                                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                                 Home
                             </NavLink>
                             <NavLink
-                                to="about"
+                                to="about-us"
                                 style={style.link}
                                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                                 About
@@ -61,10 +61,10 @@ const Header = () => {
                                 Services
                             </NavLink>
                             <NavLink
-                                to="case-studies"
+                                to="resources"
                                 style={style.link}
                                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-                                Case Studies
+                                Resources
                             </NavLink>
                             <NavLink
                                 to="contact"
@@ -100,7 +100,7 @@ const Header = () => {
                                         Home
                                     </NavLink>
                                     <NavLink
-                                        to="about"
+                                        to="about-us"
                                         onClick={threeMenuFunction}
                                         style={style.link}
                                         className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
@@ -114,11 +114,11 @@ const Header = () => {
                                         Services
                                     </NavLink>
                                     <NavLink
-                                        to="case-studies"
+                                        to="resources"
                                         onClick={threeMenuFunction}
                                         style={style.link}
                                         className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-                                        Case Studies
+                                        Resources
                                     </NavLink>
                                     <NavLink
                                         to="contact"

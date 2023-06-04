@@ -3,7 +3,7 @@ import React from 'react'
 const Cert = () => {
     return (
         <>
-            <div className='bg-black'>
+            <div className='cert'>
                 <div className='p-10'>
                     <div className='justify-around md:flex '>
                         <div className='text-center my-10'>

@@ -53,7 +53,7 @@ code {
   background-position: right;
 }
 .cert {
-  background-image: url('../build/img/Computer Background.jpeg');
+  background-image: url('../build/img/desktop-background-blue.webp');
   position: relative;
   height: auto;
   width: 100%;
@@ -62,5 +62,11 @@ code {
   justify-content: center;
   background-size: cover;
   background-position: center;
-	filter: grayscale(100%);
+}
+
+.activeLink a.active {
+  color: #16BBAB;
+}
+.activeLink a.inactive {
+  color: white;
 }

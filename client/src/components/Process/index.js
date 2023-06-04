@@ -62,8 +62,8 @@ const Process = () => {
             </div>
             <main className="mx-auto">
                 <section className="grid grid-cols-1 divide-y md:flex md:flex-row w-100">
-                    <details className="group py-1 text-lg border-none flex justify-center md:w-1/5">
-                        <summary className="flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                    <details className="group py-1 text-lg border-none flex justify-center md:w-1/5 ">
+                        <summary className="flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px] m-10">
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/forklift.svg' alt=''></img>
                             PICKUP
                         </summary>
@@ -71,7 +71,7 @@ const Process = () => {
                     </details>
 
                     <details className="group py-1 text-lg border-none md:w-1/5 bg-[#C4EEEA]">
-                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px] mt-7">
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px] mt-16">
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/box-truck.svg' alt=''></img>
                             TRANSPORT
                         </summary>
@@ -80,7 +80,7 @@ const Process = () => {
                     </details>
 
                     <details className="group py-1 text-lg border-none md:w-1/5 bg-[#8ADDD5]">
-                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px] m-10">
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/gear-2-gear.svg' alt=''></img>
                             PROCESSING
                         </summary>
@@ -91,14 +91,14 @@ const Process = () => {
                         </div>
                     </details>
                     <details className="group py-1 text-lg border-none md:w-1/5 bg-[#50CCC0]">
-                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px] mt-4">
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px] mt-14">
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/desktop-computer.svg' alt=''></img>
                             RESELL
                         </summary>
                         <p className="text-gray-500 text-center">Resell equipment to multiple market channels to maximize revenue recovery.</p>
                     </details>
                     <details className="group py-1 text-lg border-none md:w-1/5 bg-[#16BBAB]">
-                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px]">
+                        <summary className=" flex sm:flex-wrap cursor-pointer text-xl font-bold flex-row flex-col items-center py-1 text-gray-800 marker:[font-size:0px] m-10">
                             <img className='' style={{ minWidth: "100px", maxWidth: "100px" }} src='/img/recycle.svg' alt=''></img>
                             RECYCLE
                         </summary>

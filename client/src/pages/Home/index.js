@@ -5,13 +5,13 @@ import Services from '../../components/Services/index';
 import Process from '../../components/Process/index';
 import Client from '../../components/Clients/index'
 import Cert from '../../components/Cert/index'
+import Reviews from '../../components/Reviews/index'
 
 
 const Home = () => {
     return (
         <>
             <div className='pt-10 bg-gradient-to-r from-lightblue to-darkblue'>
-                <Header />
                 <main className='mt-20 sm:flex mx-14'>
                     <div className='w-full sm:w-1/2 sm:m-5 items-end'>
                         <div className='max-w-md'>
@@ -50,6 +50,9 @@ const Home = () => {
             </div>
             <div>
                 <Client />
+            </div>
+            <div>
+                <Reviews />
             </div>
             <div>
                 <Cert />
