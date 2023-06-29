@@ -72,6 +72,13 @@ const Header = () => {
                                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                                 Contact
                             </NavLink>
+                            <NavLink
+                                to="https://recycletech.razorerp.com/clientportal/home"
+                                style={style.link}
+                                target='_blank'
+                                className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+                                Login
+                            </NavLink>
 
                         </div>
                     </div>
@@ -126,6 +133,13 @@ const Header = () => {
                                         style={style.link}
                                         className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                                         Contact
+                                    </NavLink>
+                                    <NavLink
+                                        to="https://recycletech.razorerp.com/clientportal/home"
+                                        style={style.link}
+                                        target='_blank'
+                                        className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+                                        Login
                                     </NavLink>
                                 </div>
                             </div>
