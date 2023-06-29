@@ -3,11 +3,11 @@ import React from 'react'
 const Services = () => {
     return (
         <div className='bg-gradient-to-r from-lightblue to-darkblue'>
-            <div className='justify-center bg-no-repeat bg-cover bg-center bluewave py-24 '>
+            <div className='justify-center bg-no-repeat bg-cover bg-center flex py-24 '>
                 <div>
                     <div className='text-center'>
                         <h1 className='text-white font-bold text-3xl uppercase'>Our Services</h1>
-                        <hr className='text-green border-t-4 rounded'></hr>
+                        <hr className='text-white border-t-4 rounded'></hr>
                     </div>
                     <div className='flex flex-wrap max-w-4xl justify-center'>
                         <div className='my-5 flex flex-col justify-center w-full sm:w-1/2 md:w-1/4'>

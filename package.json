@@ -27,5 +27,6 @@
     "gh-pages": "^5.0.0"
   },
   "dependencies": {
+    "concurrently": "^8.2.0"
   }
 }
