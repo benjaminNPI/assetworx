@@ -52,17 +52,6 @@ code {
   background-size: cover;
   background-position: right;
 }
-.cert {
-  background-image: url('../build/img/desktop-background-blue.webp');
-  position: relative;
-  height: auto;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-}
 
 .activeLink a.active {
   color: #16BBAB;
@@ -70,19 +59,7 @@ code {
 .activeLink a.inactive {
   color: white;
 }
-
-.parent {
-  position: relative;
-  overflow: visible;
-  /* //optionally set height and width, it will depend on the rest of the styling used */
-}
-
-.child {
-  position: absolute;
-  top: -9999px;
-  bottom: -9999px;
-  left: -9999px;
-  right: -9999px;
-  margin: auto
-
+.imageFlip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }

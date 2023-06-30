@@ -26,13 +26,13 @@ const RSSHeader = () => {
 
     return (
         <>
-            <div className='bg-darkblue border-y-4 border-white'>
+            <div className='bg-reviewBlue border-y-4 border-white'>
 
                 {data ? (
                     <div className="">
                         <div className='lg:flex text-center w-100 lg:max-h-80 xl:max-h-96' >
                             <div className='w-100 lg:w-1/2 relative overflow-visible mt-10 lg:mt-0' >
-                                <img className='rounded-full border-8 border-white lg:absolute m-auto lg:top-[-9999px] lg:left-[-9999px] lg:bottom-[-9999px] lg:right-[-9999px] w-[350px] lg:w-[450px]' src='/img/single-computer-background.jpg' />
+                                <img alt='' className='rounded-full border-8 border-white lg:absolute m-auto lg:top-[-9999px] lg:left-[-9999px] lg:bottom-[-9999px] lg:right-[-9999px] w-[350px] lg:w-[450px]' src='/img/single-computer-background.jpg' />
                             </div>
                             <div className='text-center lg:text-end w-100 lg:w-1/2 mt-10 sm:mt-5 lg:my-0 mx-3 lg:pl-18 xl:pl-32 lg:mx-0'>
                                 <div className='text-lightgreen font-bold text-xl xl:text-2xl m-auto  lg:mr-10 sm:mt-5'>Featured Article</div>

@@ -58,7 +58,7 @@ const Home = () => {
             <div>
                 <Client />
             </div>
-            <div>
+            <div className=' sm:p-12 md:px-24 lg:px-42 xl:px-96 py-8 bg-gradient-to-r from-lightblue to-darkblue' >
                 <Reviews />
             </div>
             <div>

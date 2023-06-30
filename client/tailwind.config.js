@@ -28,7 +28,8 @@ module.exports = {
         'black': '#212121',
         'lightgreen': '#50CCC0',
         'white': '#ffffff',
-        'gray': '#808080e2'
+        'gray': '#808080e2',
+        'reviewBlue': '#0E5BA7'
       }
     },
     plugins: [
