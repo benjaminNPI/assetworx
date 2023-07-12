@@ -61,7 +61,7 @@ const Header = () => {
                                 Services
                             </NavLink>
                             <NavLink
-                                to="resources"
+                                to="/resources/blog"
                                 style={style.link}
                                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                                 Resources
@@ -100,7 +100,7 @@ const Header = () => {
                             <div className="-my-6 divide-y divide-gray-500/10 ">
                                 <div className="py-6 activeLink  px-3 text-2xl font-semibold text-white flex flex-col">
                                     <NavLink
-                                        to=""
+                                        to="/"
                                         onClick={threeMenuFunction}
                                         style={style.link}
                                         className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
@@ -121,7 +121,7 @@ const Header = () => {
                                         Services
                                     </NavLink>
                                     <NavLink
-                                        to="resources"
+                                        to="/resources/blog"
                                         onClick={threeMenuFunction}
                                         style={style.link}
                                         className={({ isActive }) => (isActive ? 'active' : 'inactive')}>

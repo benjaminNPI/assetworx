@@ -5,6 +5,8 @@ import Home from './pages/Home/index'
 import About from './pages/About/index'
 import Footer from './components/Footer/index';
 import Contact from './pages/Contact/index'
+import ResourceHeader from './components/resourceHeader';
+import SinglePagePost from './pages/SinglePagePost';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path="/" element={<Home />} ></Route>
           <Route path="/about-us" element={<About />} ></Route>
           <Route path="/contact" element={<Contact />} ></Route>
+          <Route path="/resources/:resourceName" element={<ResourceHeader />} ></Route>
+          <Route path="/resources/blog/:id" element={<SinglePagePost />} ></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -3,7 +3,6 @@ import InnerHTML from 'dangerously-set-html-content'
 
 const Contact = () => {
     const contactForm = `
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
     <script>hbspt.forms.create({region: "na1",portalId: "20208899",formId: "ab9ccda4-040c-4a15-b52f-14b7303718c5"});</script>
     `
     return (
