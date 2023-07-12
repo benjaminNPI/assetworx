@@ -16,6 +16,7 @@ const SinglePagePost = () => {
       try {
         const response = await fetch(url);
         const jsonData = await response.json();
+        console.log(jsonData)
         const array = Object.values(jsonData.items);
         const data_filter = array.filter((element) => element.guid === postID[3]);
         // console.log(data_filter)
@@ -47,11 +48,11 @@ const SinglePagePost = () => {
   }
 
   return (
-    <div className="p-12 bg-gradient-to-r from-lightblue to-darkblue">
-      <div className="bg-white p-3 text-center">
+    <div className="p-12 bg-white">
+      <div className=" p-3 text-center">
         <div className="font-bold my-2 text-3xl">{data[0].title}:</div>
         <div className="font-bold my-2">{dateEl ? dateEl.toLocaleString() : ""}</div>
-        <InnerHTML html={data[0].description} className="w-full" />
+        <InnerHTML html={data[0].description} className="w-full font-bold" />
         
       </div>
     </div>

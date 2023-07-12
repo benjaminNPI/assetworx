@@ -26,7 +26,7 @@ const RSSHeader = () => {
 
     return (
         <>
-            <div className='bg-reviewBlue border-y-4 border-white'>
+            <div className='bg-green border-y-4 border-white'>
 
                 {data ? (
                     <div className="">
@@ -35,13 +35,13 @@ const RSSHeader = () => {
                                 <img alt='' className='rounded-full border-8 border-white lg:absolute m-auto lg:top-[-9999px] lg:left-[-9999px] lg:bottom-[-9999px] lg:right-[-9999px] w-[350px] lg:w-[450px]' src='/img/single-computer-background.jpg' />
                             </div>
                             <div className='text-center lg:text-end w-100 lg:w-1/2 mt-10 sm:mt-5 lg:my-0 mx-3 lg:pl-18 xl:pl-32 lg:mx-0'>
-                                <div className='text-lightgreen font-bold text-xl xl:text-2xl m-auto  lg:mr-10 sm:mt-5'>Featured Article</div>
+                                <div className='text-reviewBlue font-bold text-xl xl:text-2xl m-auto  lg:mr-10 sm:mt-5'>Featured Article</div>
                                 <div className='text-white font-bold text-2xl 2xl:text-3xl m-auto md:mx-20 lg:mr-10'>{data.items[0].title}</div>
                                 <div className='text-white text-sm 2xl:text-xl m-auto md:mx-20 lg:mr-10'>{data.items[0].content_text}</div>
                                 <Link
                                 to={`/resources/blog/${data.items[0].guid}`}
                                     type="button"
-                                    className="bg-green hover:bg-lightgreen text-white xl:text-xl m-auto lg:mr-10 inline-block rounded-full px-6 pt-2 pb-[6px] font-medium text-black my-3 text-center mr-1"
+                                    className="bg-reviewBlue hover:bg-lightblue text-white xl:text-xl m-auto lg:mr-10 inline-block rounded-full px-6 pt-2 pb-[6px] font-medium text-black my-3 text-center mr-1"
                                 >
                                     Read Now
                                 </Link>

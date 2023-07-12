@@ -48,9 +48,9 @@ const ResourceHeader = (req) => {
           </Link>
           <Link
             className="bg-reviewBlue mx-1 text-white px-4 py-2 border border-2 border-white rounded-lg"
-            to="/resources/client-success"
+            to="/resources/white-papers"
           >
-            Client Success
+            White Papers
           </Link>
           <Link
             className="bg-reviewBlue mx-1 text-white px-4 py-2 border border-2 border-white rounded-lg"
@@ -62,7 +62,7 @@ const ResourceHeader = (req) => {
       </div>
       {pathname.includes("/resources/blog") && <BlogPosts />}
       {pathname.includes("/resources/case-studies") && <Casestudies />}
-      {pathname.includes("/resources/client-success") && <ClientSuccess />}
+      {pathname.includes("/resources/white-papers") && <ClientSuccess />}
       {pathname.includes("/resources/our-impact") && <OurImpact />}
     </>
   );
